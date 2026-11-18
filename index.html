@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Alysha Collection — an elegant edit of contemporary fashion.">
+  <title>Alysha Collection | Curated Fashion</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="announcement">COMPLIMENTARY SHIPPING ON ORDERS OVER $150</div>
+  <header class="site-header">
+    <a class="wordmark" href="#" aria-label="Alysha Collection home">ALYSHA <span>COLLECTION</span></a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">☰</button>
+    <nav id="mainNav">
+      <a href="#new">NEW IN</a><a href="#shop">READY TO WEAR</a><a href="#story">OUR STORY</a>
+    </nav>
+    <button class="cart-button" id="cartButton">BAG <span id="cartCount">0</span></button>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">THE NEW SEASON EDIT</p>
+        <h1>Style that speaks<br><em>without saying</em>.</h1>
+        <p class="hero-text">Thoughtfully curated pieces for the moments that matter — and all the ones in between.</p>
+        <a class="dark-button" href="#shop">EXPLORE THE COLLECTION <span>↗</span></a>
+      </div>
+      <div class="hero-image" role="img" aria-label="Elegant contemporary fashion editorial"></div>
+      <div class="hero-note">CURATED FOR YOU · EST. 2026</div>
+    </section>
+
+    <section class="intro" id="story">
+      <p class="eyebrow">A MORE CONSIDERED WARDROBE</p>
+      <h2>Pieces to keep.<br><em>Looks to remember.</em></h2>
+      <p>Discover timeless silhouettes, modern essentials and statement pieces selected with an eye for detail.</p>
+    </section>
+
+    <section class="shop-section" id="shop">
+      <div class="section-heading" id="new">
+        <div><p class="eyebrow">THE ALYSHA EDIT</p><h2>Shop the collection</h2></div>
+        <div class="filters" role="group" aria-label="Filter products">
+          <button class="filter active" data-filter="All">All pieces</button>
+          <button class="filter" data-filter="Dresses">Dresses</button>
+          <button class="filter" data-filter="Tops">Tops</button>
+          <button class="filter" data-filter="Sets">Sets</button>
+        </div>
+      </div>
+      <div class="product-grid" id="productGrid"></div>
+    </section>
+
+    <section class="quote-band">
+      <p>“Elegance is not about being noticed,<br>it's about being remembered.”</p>
+      <span>THE ALYSHA PHILOSOPHY</span>
+    </section>
+  </main>
+
+  <footer>
+    <a class="wordmark footer-mark" href="#">ALYSHA <span>COLLECTION</span></a>
+    <p>Considered fashion. Personal style.</p>
+    <small>© 2026 Alysha Collection. Demo storefront — sample products and prices.</small>
+  </footer>
+
+  <div class="cart-panel" id="cartPanel" aria-label="Shopping bag">
+    <div class="cart-top"><h3>Your bag</h3><button id="closeCart" aria-label="Close bag">✕</button></div>
+    <div id="cartItems" class="cart-items"><p class="empty">Your bag is waiting for something lovely.</p></div>
+    <div class="cart-bottom"><div><span>Subtotal</span><strong id="subtotal">$0.00</strong></div><button class="dark-button checkout" id="checkout">CONTINUE TO CHECKOUT</button><small>Demo only — checkout is not connected.</small></div>
+  </div>
+  <div class="overlay" id="overlay"></div>
+  <script src="script.js"></script>
+</body>
+</html>
